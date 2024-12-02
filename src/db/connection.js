@@ -1,4 +1,4 @@
-const monk = require('monk');
+import monk from 'monk';
 
 const dbUrl = process.env.DB_URL;
 
@@ -10,4 +10,4 @@ db.then(() => {
   console.log('Connected correctly to server');
 });
 
-module.exports = db;
+export default db;
